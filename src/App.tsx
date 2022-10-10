@@ -3,7 +3,8 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      <h1>App-teste</h1>
+      <h1>App-teste-audio</h1>
+      <audio src='public/vivaldi.mp3' controls></audio>
     </div>
   );
 }
