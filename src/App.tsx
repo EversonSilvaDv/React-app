@@ -1,10 +1,11 @@
 import React from 'react';
+import Routes from './Routes';
+import './style.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>App-teste-audio</h1>
-      <audio src='./vivaldi.mp3' controls></audio>
+    <div className='resetDiv'>
+      <Routes />
     </div>
   );
 }
