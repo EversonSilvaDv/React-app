@@ -1,10 +1,26 @@
-import Home from "./home";
+import { useState } from "react";
+import Home from "./pages/index";
+import Drone from './pages/drone';
 import Layout from "./components/layout";
 
+
 const Routes: React.FC = () => {
+
+  const [ page, setPage ] = useState('Home');
+
+  const handlePage = (page: string) => {
+    console.log(page);
+    setPage(page);
+  }
+
   return (
-    <Layout>
-      <Home />
+    <Layout page={handlePage} title={page}>
+      {
+        page === 'Home' && <Home />
+      }
+      {
+        page === 'Drone' && <Drone />
+      }
     </Layout>
   );
 }
