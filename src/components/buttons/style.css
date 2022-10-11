@@ -1,0 +1,48 @@
+.buttonRounded {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 20%;
+    background: linear-gradient(135deg, #aaaaaa, #eeeeee);
+    box-shadow: 5px 5px 10px #aaaaaa, -5px -5px 10px #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+
+.buttonRounded:hover {
+    box-shadow: 30px 30px 50px #aaaaaa, -30px -30px 60px #dddddd;
+}
+
+@media only screen and (max-width: 600px){
+    .buttonRounded:active {
+        box-shadow: 30px 30px 50px #aaaaaa, -30px -30px 60px #dddddd;
+        transition: all 0.0s ease-out;
+    }
+}
+
+.buttonCircular {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px #aaaaaa, -5px -5px 10px #dddddd;
+    transition: all 0.5s ease-out;
+}
+
+.buttonCircular:hover {
+    color: red;
+    box-shadow: 15px 15px 25px #aaaaaa, -15px -15px 30px #dddddd;
+}
+
+@media only screen and (max-width: 600px){
+    .buttonCircular:active {
+        color: red;
+        box-shadow: 15px 15px 25px #aaaaaa, -15px -15px 30px #dddddd;
+        transition: all 0.0s ease-out;
+    }
+}

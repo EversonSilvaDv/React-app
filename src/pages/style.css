@@ -1,0 +1,42 @@
+.teste {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-color: #cccccc;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 20%;
+    background: linear-gradient(135deg, #cccccc, #eeeeee);
+    /* box-shadow: 20px 20px 50px #aaaaaa, -30px -30px 60px #dddddd; */
+    box-shadow: 5px 5px 10px #aaaaaa, -5px -5px 10px #dddddd;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+
+.circle:hover {
+    box-shadow: 30px 30px 50px #aaaaaa, -30px -30px 60px #dddddd;
+    
+}
+
+.neon-text {
+    color: rgb(231, 105, 105);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}

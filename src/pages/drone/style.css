@@ -1,0 +1,7 @@
+.headerDronePage {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

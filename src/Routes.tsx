@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Home from "./pages/index";
-import Drone from './pages/drone';
-import Layout from "./components/layout";
+import Drone from './pages/drone/drone';
+import Layout from "./components/layout/layout";
 
 
 const Routes: React.FC = () => {
 
-  const [ page, setPage ] = useState('Home');
+  const [ page, setPage ] = useState('Drone');
 
   const handlePage = (page: string) => {
     console.log(page);
@@ -15,9 +15,9 @@ const Routes: React.FC = () => {
 
   return (
     <Layout page={handlePage} title={page}>
-      {
+      {/* {
         page === 'Home' && <Home />
-      }
+      } */}
       {
         page === 'Drone' && <Drone />
       }
