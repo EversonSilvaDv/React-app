@@ -85,9 +85,9 @@ const Layout: React.FC<IPropsLayout> = (props) => {
     //     {props.children}
     //   </Paper>
     // </Box>
-    <Paper elevation={6} className="layoutPaper">
+    <div className="layoutPaper">
       {props.children}
-    </Paper>
+    </div>
   );
 }
 
